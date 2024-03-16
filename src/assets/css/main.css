@@ -1,0 +1,28 @@
+@import url('./fonts.css');
+
+:root {
+	--Nutmeg: #854632;
+	--DarkRaspberry: #7b284f;
+
+	--White: #fff;
+	--RoseWhite: #fff5fa;
+	--Eggshell: #f3e6d8;
+	--Light-Grey: #e4ded8;
+	--Wenge-Brown: #5f574e;
+	--Dark-Charcoal: #302d2c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Nunito;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	position: relative;
+}

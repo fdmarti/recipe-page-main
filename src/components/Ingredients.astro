@@ -1,0 +1,13 @@
+---
+import SmallTitle from './shared/SubTitle.astro';
+import { ingredients } from '../data/ingredients';
+---
+
+<section class='mb-5'>
+	<SmallTitle title='Ingredients' />
+	<ul
+		class='list-disc list-inside flex flex-col gap-2 text-wenge-brown text-[16px]'
+	>
+		{ingredients.map((el) => <li>{el.text}</li>)}
+	</ul>
+</section>

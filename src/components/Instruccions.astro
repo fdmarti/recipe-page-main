@@ -1,0 +1,20 @@
+---
+import SmallTitle from './shared/SubTitle.astro';
+import { instruccions } from '../data/Instruccions';
+---
+
+<section class='my-5'>
+	<SmallTitle title='Instruccions' />
+	<ol
+		class='list-decimal list-outside flex flex-col gap-3 text-wenge-brown text-[16px] ml-5'
+	>
+		{
+			instruccions.map((el) => (
+				<li>
+					<span class='font-bold'>{el.title}</span>
+					{el.content}
+				</li>
+			))
+		}
+	</ol>
+</section>

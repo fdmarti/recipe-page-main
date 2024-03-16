@@ -1,0 +1,29 @@
+---
+const preparations = [
+	{
+		title: 'Total',
+		text: 'Approximately 10 minutes',
+	},
+	{
+		title: 'Preparation',
+		text: '5 minutes',
+	},
+	{
+		title: 'Cooking',
+		text: '5 minutes',
+	},
+];
+---
+
+<section class='my-5 bg-rose-white p-8 rounded'>
+	<h4 class='font-bold text-dark-rasberry text-xl mb-2'>Preparation time</h4>
+	<ul class='list-disc list-inside flex flex-col gap-2 text-wenge-brown text-[15px]'>
+		{
+			preparations.map((el) => (
+				<li>
+					<span class='font-bold'>{el.title}:</span> {el.text}
+				</li>
+			))
+		}
+	</ul>
+</section>
